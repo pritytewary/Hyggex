@@ -22,7 +22,7 @@ export default function Home() {
           </a>
           <FaAngleRight size={15} className="text-[#06286E]" />
           <a href="" className="text-[#06286E] text-lg font-semibold">
-            Relation and Fumction
+            Relation and Function
           </a>
         </div>
 
