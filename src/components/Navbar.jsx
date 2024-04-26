@@ -2,7 +2,7 @@ import { Logo } from "./Logo";
 
 export default function Navbar() {
   return (
-    <div className="flex  justify-between items-center h-28 ">
+    <div className="flex  justify-between items-center h-28 px-32 ">
       <div className=" ">
         <Logo />
       </div>

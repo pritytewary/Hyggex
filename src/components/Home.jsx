@@ -1,7 +1,7 @@
 import { GoHome } from "react-icons/go";
 import { FaAngleRight } from "react-icons/fa6";
 import { SlArrowDown } from "react-icons/sl";
-import { BiSolidPlusCircle } from "react-icons/bi";
+
 import FlashCard from "./Flashcard";
 import { PublishedBy } from "./Logo";
 import plusicon from "../assets/plusicon.svg";
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col font-inter py-36 px-8">
+        <div className="flex flex-col font-inter py-36 px-8 ">
           <div className="font-bold  bg-gradient-to-br from-[#06286E] to-[#164EC0] text-5xl bg-clip-text text-transparent inline-block">
             FAQ
           </div>
