@@ -1,19 +1,16 @@
-import { MdLightbulbOutline } from "react-icons/md";
-
 import { GoHome } from "react-icons/go";
 import { FaAngleRight } from "react-icons/fa6";
-import { HiSpeakerWave } from "react-icons/hi2";
-import { MdRefresh } from "react-icons/md";
-
-import { IoMdQrScanner } from "react-icons/io";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
+import { SlArrowDown } from "react-icons/sl";
+import { BiSolidPlusCircle } from "react-icons/bi";
+import FlashCard from "./Flashcard";
+import { PublishedBy } from "./Logo";
+import plusicon from "../assets/plusicon.svg";
 
 export default function Home() {
   return (
     <>
       <div className="mt-6 px-32 gap-2 flex flex-col h-screen w-full   ">
-        <div className="flex items-center">
+        <div className="flex items-center font-inter">
           <GoHome size={25} className="text-[#696671]" />
           <FaAngleRight size={15} className="text-[#06286E]" />
           <a href="" className="text-lg text-[#696671] font-medium">
@@ -29,62 +26,43 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="mt-14   mb-8 font-bold bg-gradient-to-b from-[#06286E]  to-[#164EC0]  text-4xl text-transparent bg-clip-text inline-block items-center ">
+        <div className="mt-14 font-Mons  mb-8 font-bold bg-gradient-to-b from-[#06286E]  to-[#164EC0]  text-4xl text-transparent bg-clip-text inline-block items-center ">
           Relations and Functions (Mathematics)
         </div>
-        <div className="flex gap-10 mt-5 items-center  justify-center">
-          <a
-            href=""
-            className="text-[#06286E] text-xl font-bold border-b-2  border-[#06286E] pb-2 px-2"
-          >
-            {" "}
-            Study
-          </a>
-          <a href="" className="text-[#696671] font-medium text-xl">
-            Quiz
-          </a>
-          <a href="" className="text-[#696671] font-medium text-xl">
-            Test
-          </a>
-          <a href="" className="text-[#696671] font-medium text-xl">
-            Game
-          </a>
-          <a href="" className="text-[#696671] font-medium text-xl">
-            Others
-          </a>
-        </div>
 
-        <div className=" mt-8 items-center justify-center flex flex-col">
-          <div className="bg-gradient-to-br to-blue-900 via-blue-700 from-blue-400  w-[712px] h-[400px] rounded-[42px] text-white flex  px-10 py-10 flex-col">
-            <div className="flex justify-between">
-              <MdLightbulbOutline size={30} />
-              <HiSpeakerWave size={25} />
-            </div>
-            <div className="font-bold text-4xl items-center justify-center flex my-28">
-              9+6+7x-2x-3
-            </div>
+        <FlashCard />
+
+        <div className="flex justify-between items-center mt-8">
+          <div>
+            <PublishedBy />
           </div>
+          <div className="flex gap-2 items-center">
+            <img src={plusicon} alt="" />
 
-          <div className="flex gap-36 mt-8 mx-10">
-            <MdRefresh
-              size={40}
-              className="text-transparent bg-gradient-to-br bg-clip-text inline-block from-[#06286E] to-[#164EC0]"
-            />
-            <div className="gap-10 flex">
-              <div className="bg-gradient-to-b from-[#06286E] to-[#164EC0] w-14 h-14 rounded-full text-white flex items-center justify-center">
-                <IoIosArrowBack size={40} />
-              </div>
-              <p className="font-bold text-2xl">01/10</p>
-              <div className="bg-gradient-to-b from-[#06286E] to-[#164EC0]  w-14 h-14 rounded-full text-white items-center justify-center flex">
-                <IoIosArrowForward size={40} />
-              </div>
-            </div>
-            <IoMdQrScanner size={40} />
+            <p className="from-[#06286E] to-[#164EC0] bg-gradient-to-br font-inter bg-clip-text text-transparent  font-semibold text-3xl">
+              Create FlashCard
+            </p>
           </div>
         </div>
 
-        <div>
-          <div></div>
+        <div className="flex flex-col font-inter py-36 px-8">
+          <div className="font-bold  bg-gradient-to-br from-[#06286E] to-[#164EC0] text-5xl bg-clip-text text-transparent inline-block">
+            FAQ
+          </div>
+          <div className="flex flex-col gap-8 mt-10">
+            <div className="max-w-4xl h-14 border border-[#217EEC] rounded-xl font-semibold text-base text-[#28262C] flex justify-between items-center px-6 ">
+              Can education flashcards be used for all age groups?
+              <SlArrowDown size={20} />
+            </div>
+            <div className="max-w-4xl h-14 border border-[#217EEC] rounded-xl font-semibold text-base text-[#28262C] flex justify-between items-center px-6">
+              How do education flashcards work?
+              <SlArrowDown size={20} />
+            </div>
+            <div className="max-w-4xl h-14 border border-[#217EEC] rounded-xl font-semibold text-base text-[#28262C] flex justify-between items-center px-6">
+              Can education flashcards be used for test preparation?
+              <SlArrowDown size={20} />
+            </div>
+          </div>
         </div>
       </div>
     </>

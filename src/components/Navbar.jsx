@@ -1,23 +1,13 @@
-import vector from "../assets/vector.svg";
-import logo from "../assets/logo.png";
+import { Logo } from "./Logo";
 
 export default function Navbar() {
   return (
-    <div className="flex px-32 justify-between items-center h-28 ">
-      <div className="flex items-center ">
-        <div className="relative">
-          <img src={logo} alt="" className="w-28 h-28 filter backdrop-invert" />
-          <p className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-            H
-          </p>
-        </div>
-
-        <div className="flex items-center">
-          ygge <img src={vector} alt="" />
-        </div>
+    <div className="flex  justify-between items-center h-28 ">
+      <div className=" ">
+        <Logo />
       </div>
 
-      <div className="gap-10 flex items-center">
+      <div className="gap-10 flex items-center font-in">
         <div className="flex gap-10">
           <a href="" className="text-[#3A3740] text-lg ">
             Home
